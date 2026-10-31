@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  background: #eef4f0;
+  color: #16191c;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 16px;
+  background: radial-gradient(circle at 20% 10%, #d9efe6 0%, #eef4f0 45%, #e2e8f0 100%);
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e2e5e0;
+  border-radius: 28px;
+  box-shadow: 0 24px 70px rgba(12, 110, 86, 0.12);
+  padding: 48px 40px;
+  max-width: 860px;
+  width: 100%;
+  text-align: center;
+}
+
+.logo-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.logo {
+  width: 140px;
+  height: 140px;
+  border-radius: 32px;
+  box-shadow: 0 12px 30px rgba(12, 110, 86, 0.35);
+}
+
+.app-name {
+  margin: 16px 0 4px;
+  font-family: 'Sora', 'Inter', system-ui, sans-serif;
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #0c6e56;
+}
+
+.tagline {
+  margin: 0 0 20px;
+  font-size: 17px;
+  color: #4e5963;
+  font-weight: 500;
+}
+
+.intro {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #4e5963;
+  max-width: 640px;
+  margin: 0 auto 32px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+  margin-bottom: 36px;
+  text-align: left;
+}
+
+.feature {
+  background: #f6f7f4;
+  border: 1px solid #e2e5e0;
+  border-radius: 20px;
+  padding: 18px;
+}
+
+.feature-icon {
+  font-size: 22px;
+}
+
+.feature h3 {
+  margin: 10px 0 6px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.feature p {
+  margin: 0;
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: #4e5963;
+}
+
+.download-btn {
+  display: inline-block;
+  background: #0c6e56;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 16px 40px;
+  border-radius: 999px;
+  box-shadow: 0 12px 28px rgba(12, 110, 86, 0.35);
+  transition: transform 120ms ease, box-shadow 200ms ease;
+}
+
+.download-btn:hover {
+  transform: scale(1.03);
+  box-shadow: 0 16px 34px rgba(12, 110, 86, 0.45);
+}
+
+.apk-note {
+  margin-top: 14px;
+  font-size: 12px;
+  color: #84909b;
+}
+
+@media (max-width: 640px) {
+  .card {
+    padding: 32px 20px;
+  }
+  .app-name {
+    font-size: 36px;
+  }
+  .logo {
+    width: 104px;
+    height: 104px;
+    border-radius: 24px;
+  }
+}
